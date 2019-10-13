@@ -1,0 +1,28 @@
+#modal1 {
+  background-color: #FFF;
+  border-radius: 2%;
+  width: 90%;
+  max-height: 90%;
+}
+
+@media (min-width: 840px) {
+  #modal1 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 940px) {
+  #modal1 {
+    width: 30%;
+  }
+}
+
+#modal1 .modal-content {
+  padding-top: 0;
+}
+
+#modal1 .modal-content .input-field {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=Modal.css.map */

@@ -1,0 +1,34 @@
+$desktop-1 : 840px;
+$desktop-2 : 940px;
+@mixin desktop-1{
+    @media (min-width: #{$desktop-1}){
+        @content;
+    }
+}
+@mixin desktop-2{
+    @media (min-width: #{$desktop-2}){
+        @content;
+    }
+}
+
+#modal1{
+    background-color: #FFF;
+    border-radius: 2%; 
+    width: 90%;
+    max-height: 90%;
+    @include desktop-1{
+        width: 50%;
+    }
+    @include desktop-2{
+        width: 30%;
+    }
+    .modal-content{
+        padding-top: 0;
+        .input-field{
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        
+    }
+
+}
